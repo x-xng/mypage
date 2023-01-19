@@ -2,68 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>i don't like this..</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>나만의 동기부여 홈화면 만들기</title>
+
+    <script src="index.js"></script>
+    <script src="index.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;500;600;700&family=Noto+Sans+KR:wght@300;500;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
         * {
-            font-family: 'IBM Plex Sans KR', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
-        .title {
-            color: aliceblue;
-            background-color: darkslateblue;
-            font-size: 24px;
-            padding: 3px 10px;
-            border-radius: 5px;
+        body {
+            background-image: url("jon-tyson-IXyQ2ySnKAI-unsplash.jpg");
+            background-position: center left;
+            background-size: 1550px;
+
+            color: rgba(255, 255, 255, 0.642);
         }
 
-        .bg {
-            width: 360px;
-            background-image: background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
-        }
-
-        .msg {
+        .time {
+            font-size: 100px;
             font-weight: bold;
         }
 
-        .bucket {
-            width: 160px;
-            height: 160px;
+        .greeting {
+            font-size: 50px;
         }
 
-        .img1 {
-            background-image: img src="./index 01" width="2026px", height="1705px";
-            background-size: cover;
-            background-position: center;
+        .todo {
+            font-size: 25px;
         }
 
-        .img2 {
-            background-color: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
-            background-size: cover;
-            background-position: center;
+        .author {
+            font-size: 10px;
+            font-style: italic;
+        }
+
+        .main {
+            width: 100vw;
+            height: 80vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+        }
+
+        .quote {
+            width: 100vw;
+            height: 15vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+
+    <script>
+    </script>
 </head>
 
-<body class="bg-t3 center">
-    <h1 class="title-t3">2023 Check list🐇</h1>
-    <p class="msg">DO IT</p>
-    <div class="row flex-row wrap">
-        <div class="bucket img1 center">코생아에서 코린이 되기</div>
-        <div class="bucket img2 center">스타벅스 입사하기</div>
-        <div class="bucket img2 center">살 빼고 몸 만들기</div>
-        <div class="bucket img1 center">남자친구 HI</div>
-        <div class="bucket img1 center">UXUI 중급 수준 만들기</div>
-        <div class="bucket img2 center">남은 영상 다 편집하고 올리기</div>
-        <div class="bucket img2 center">이모티콘 출시하기</div>
-        <div class="bucket img1 center">새 집으로 이사가기</div>
+<body>
+    <div class="main">
+        <div id="time" class="time">12:19</div>
+        <div class="greeting">WORK WORK WORK</div>
+        <div class="todo">　• 　studying Python</div>
+        <div class="todo">　• 　studying UXUI</div>
+        <div class="todo">　• 　sell my emoticon</div>
+        <div class="todo">　• 　work at Starbucks</div>
     </div>
-
+    <div class="quote">
+        <div id="content" class="content">명언의 내용</div>
+        <div id="author" class="author">- 명언의 저자 -</div>
+    </div>
 </body>
 
 </html>
